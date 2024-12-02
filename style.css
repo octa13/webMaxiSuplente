@@ -1,0 +1,680 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Share Tech', sans-serif;
+  margin: 0;
+}
+
+
+.desktop{
+  background:linear-gradient( #ff4800,  #0a5592);
+  
+  
+}
+
+
+.container-fluid {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #C4C4C4;
+  position: relative;
+}
+
+.logo {
+  font-weight: 600;
+  font-size: 3.8rem;
+}
+
+/* menu de navegación */
+nav {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a.menu {
+  padding: 3px 5px;
+  font-weight: 500;
+  font-size: 1.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  color: rgb(0, 0, 0);
+  margin: 0;
+}
+
+nav .menu-container {
+  display: flex;
+  gap: 10px;
+}
+
+.menu:hover {
+  background-color: #0a5592;
+  border-radius: 70px;
+  text-decoration: none;
+  color: white;
+  padding: 3px 6px;
+}
+
+header {
+  position: absolute;
+  bottom: 30%;
+  padding: 0 50px;
+}
+
+header h1 {
+  font-size: 7rem;
+}
+
+header h2 {
+  font-size: 4rem;
+}
+
+header p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+header button {
+  padding: 0 5px;
+  width: 140px;
+  height: 40px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+  background-color: #0a5592;
+  border-radius: 25px;
+  transition: width 0.5s;
+}
+
+button img {
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+header button:hover {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 160px;
+}
+
+.container-fluid .nueva {
+  position: absolute;
+  height: 85vh;
+  right: 0%;
+  top: 15%;
+  z-index: 999;
+}
+
+.container-fluid .fondo-emp {
+  position: absolute;
+  height: 85vh;
+  width: 550px;
+  right: 1%;
+  top: 15%;
+}
+
+.icons {
+  position: absolute;
+  bottom: 8%;
+  padding: 0 50px;
+}
+
+.icons i {
+  font-size: 2.5rem;
+  padding: 0 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.icons i:hover {
+  color: #ffffff;
+  padding: 5px 10px;
+  background-color: #0a5592;
+}
+
+.marca {
+  text-decoration: none;
+  color: black !important;
+}
+
+.masinfo {
+  text-decoration: none;
+}
+
+/* WhatsApp icon */
+.whatsapp_float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.whatsapp_float img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.whatsapp_float img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilos Responsivos */
+
+@media (max-width: 1024px) {
+  header h1 {
+    font-size: 5rem;
+  }
+  
+  header h2 {
+    font-size: 3rem;
+  }
+  
+  header p {
+    font-size: 1.4rem;
+  }
+  
+  .container .nueva {
+    height: 60vh;
+  }
+  
+  .container .fondo-emp {
+    height: 60vh;
+    width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    padding: 10px 30px;
+    flex-direction: column;
+  }
+
+  nav .menu-container {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  header {
+    bottom: 20%;
+    padding: 0 20px;
+  }
+
+  header h1 {
+    font-size: 4rem;
+  }
+
+  header h2 {
+    font-size: 2.5rem;
+  }
+
+  header p {
+    font-size: 1.2rem;
+  }
+
+  .container .nueva {
+    height: 50vh;
+    top: 20%;
+  }
+
+  .container .fondo-emp {
+    height: 50vh;
+    width: 300px;
+  }
+
+  .icons {
+    bottom: 5%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 3rem;
+  }
+
+  header h2 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .container .nueva {
+    height: 40vh;
+  }
+
+  .container .fondo-emp {
+    height: 40vh;
+    width: 200px;
+  }
+
+  nav a.menu {
+    font-size: 1.5rem;
+  }
+}
+
+/*********************************************************************************************/
+
+/**Movil**/
+
+@media (max-width: 767px) {
+  .desktop {
+      display: none;
+  }
+  .tablet {
+      display: none;
+  }
+}
+
+body{
+background-color: #C4C4C4;
+padding: 0;
+margin: 0;
+
+}
+
+
+.container{
+  background-color:#C4C4C4;
+}
+
+
+.navbar-brand{
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+
+  
+ 
+
+}
+
+.navbar{
+height: 65px;
+
+}
+
+.offcanvas-title{
+  color: white;
+}
+
+.nav-link{
+  color: white;
+  font-size: 18px;
+}
+
+.bx{
+  color:white;
+  
+}
+
+.face{
+  height: 25px;
+}
+
+
+
+.port{
+  background-color: #0a5592;
+}
+
+.t{
+  color: rgb(49, 49, 49);
+  padding: 15px 0px 0px 10px ;
+  font-size: 23px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+
+}
+
+.t2{
+padding: 0px 10px;
+font-size: 20px;
+
+}
+
+.t3{
+ padding: 0px 10px;
+ font-size: 15px;
+
+}
+
+
+.masinfo2{
+  padding: 0px 0px  0px 5px;
+
+  height: 80px;
+  width: 100%;
+}
+
+
+.bot{
+color: white;
+background-color: #0a5592;
+border-radius: 20px;
+width: 120px;
+border: none;
+height: 35px;
+
+}
+
+
+hr{
+  
+}
+
+.marcas .carousel-inner img {
+  
+ 
+height: 150px; /* Ajusta la altura según tu necesidad */ 
+object-fit: contain; /* Ajusta cómo se recorta la imagen para adaptarse */
+background-color: white;
+
+}
+
+
+
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el color aquí */
+  /*border-radius: 50%;  Opcional: agrega un fondo redondeado */
+}
+
+.carousel-control-prev-icon{
+  background-color: rgba(0, 0, 0, 0.5); /* Cambia el color aquí */
+  /*border-radius: 50%;  Opcional: agrega un fondo redondeado */
+}
+
+
+
+
+
+
+
+
+
+.exp{
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0 0 0;
+
+}
+
+
+
+.a{
+  display: flex;
+ 
+}
+
+.a1{
+  padding: 30px 0 0 0;
+  width: 50%;
+}
+
+.a2{
+  display: flex;
+  justify-content: right;
+  align-items: end;
+  width: 50%;
+  margin: 0 0 0 0px;
+
+ 
+}
+.ivm{
+height: 250px;
+position: absolute;
+ 
+  z-index: 999;
+  
+
+}
+
+.imv2{
+  height:260px ;
+  padding: 30px 5px 0px 0px;
+  width:500px;
+
+}
+
+hr{
+
+margin: 8px 0; 
+}
+
+.subt{
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 0 0 0;
+
+  
+}
+
+.testimonio{
+  background-color: #0a5592;
+}
+
+
+
+.carousel-item img {
+  height: 400px; /* Ajusta esta altura según lo que necesites */
+  object-fit: cover; /* Asegura que la imagen mantenga proporciones */
+  object-position: center; /* Centra la imagen */
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 87%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10; /* Asegura que esté por encima de las imágenes */
+  text-align: center;
+}
+
+.carousel-overlay .btn {
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  border: solid #ff4800;
+  background-color: transparent;
+  width: 150px;
+}
+
+
+
+
+.subt2{
+ text-align: center;
+  /*background:linear-gradient(#0a5592, #0570c7) ;*/
+ 
+  color: white;
+
+  font-size: 50px;
+ 
+
+}
+
+
+.c{
+  background-color: #0a5592;
+  height: 350px;
+  padding: 40px 0 0 0 ;
+
+
+  
+}
+
+
+.parrafo1{
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding:20px 35px 30px 35px;
+}
+
+
+.contactame{
+
+  color: black;
+background-color: #ffffff;
+border-radius: 20px;
+width: 120px;
+border: none;
+height: 35px;
+text-align: center;
+margin: 0 0 0 35%;
+}
+
+footer{
+height: 200px ;
+text-align: center;
+}
+
+
+.copy{
+  text-align: center;
+  font-size: 15px;
+  width: 50%;
+ 
+  margin: 0 0 0 27%;
+}
+
+.p1{
+  
+  width: 50%;
+}
+
+.p2{
+
+ 
+  background-image: url(img/portfolio_site_img/6.png ) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-color: black;
+  height: 100%;
+  width: 50%;
+  
+}
+
+
+
+
+
+
+
+.nestorl{
+  padding: 30px 0px 0px 10px ;
+  font-size: 35px;
+
+  color: black;
+  margin: 0;
+
+}
+
+.face2{
+  padding: 0 0 0 10px;
+  height: 25px;
+ 
+}
+
+
+.baner{
+height:230px;
+
+ display: flex;
+ justify-content:space-evenly;
+ align-items: center;
+
+
+
+}
+
+
+.ban1{
+  background-image: url(img/portfolio_site_img/GRAN\ EXPERIENCIA\ EN\ REDES.png);
+  height: 90%;
+  width: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+.ban2{
+  background-image: url(img/portfolio_site_img/GRAN\ EXPERIENCIA\ EN\ REDES\ \(1\).png);
+  height: 90%;
+  width: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  
+}
+
+.cuadro{
+
+  height: 300px;
+  background-image: url(img/portfolio_site_img/GRAN\ EXPERIENCIA\ EN\ REDES\ \(2\).png);
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size:contain;
+  margin: 0px 13px 0px 13px;
+ 
+  background-color:#ff733b;
+  
+}
+
+/**********************************************************************************/
+
+/**Tablet**/
+
+@media (min-width: 768px) and (max-width: 990px) {
+  .desktop {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************************************************************************/
+/**Escritorio**/
+
+@media (min-width: 991px) {
+  .tablet {
+      display: none;
+  }
+  .movil {
+      display: none;
+  }
+}
