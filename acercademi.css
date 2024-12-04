@@ -72,8 +72,9 @@ nav .menu-container {
 
 header {
   position: absolute;
-  bottom: 30%;
+
   padding: 0 50px;
+ 
 }
 
 header h1 {
@@ -658,13 +659,13 @@ height:230px;
 .acerca{
   padding: 0 0 0 10px;
   font-size: 25px;
-  color: white;
+  color: black;
 }
 
 .texto{
   padding: 0 15px 20px 15px;
   font-size: 13px;
-  color: white;
+  color:black;
   
 }
 
@@ -678,7 +679,7 @@ height:230px;
 }
 
 section{
-  background-color:#0a5592;
+  background-color:#C4C4C4;
   padding: 10px 5px;
 }
 

@@ -56,24 +56,29 @@
 
 
             <div class="formulario">
-                <form action="">
+                <form action="https://formsubmit.co/octagodoy13@gmail.com " method="POST">
                     <div class="form-grid">
                         <div class="col">
                             <label for="nombre">Nombre y Apellido</label>
-                            <input type="text" id="nombre" placeholder="Escribe tu nombre" required>
+                            <input type="text" id="nombre" placeholder="Escribe tu nombre" required   name="name"> 
                             
                             
                             
                             <label for="correo">E-mail</label>
-                            <input type="email" id="correo" placeholder="Escribe tu correo" required>
+                            <input type="email" id="correo" placeholder="Escribe tu correo" required name="mail">
                         </div>
                         <div class="col">
                             <label for="consulta">Consulta</label>
-                            <input type="text" id="consulta" placeholder="Escribe tu consulta" required class="largo">
+                            <input type="text" id="consulta" placeholder="Escribe tu consulta" required class="largo" name="mje">
                             
                             
                         </div>
                        
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value=" https://octa13.github.io/webMaxiSuplente/">
+
+
+
                     </div>
                     <input type="submit" class="boton" value="Enviar" class="envia">
                 </form>

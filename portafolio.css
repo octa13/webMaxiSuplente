@@ -87,9 +87,47 @@ a{
 
 header{
  position: absolute;
- bottom: 30%;
- padding: 0 50px;
+width: 700px;
+ padding:0;
+ margin: 0 40px;
+background-color: #0a5592;
+height:400px;
+
+
 }
+
+
+.inst-pri{
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+
+}
+
+.inst-1{
+background-color: aqua;
+width: 48%;
+height:180px;
+
+
+}
+
+.inst-2{
+  background-color: rgb(3, 129, 129);
+  width: 48%;
+  height: 180px;
+ 
+  }
+  
+
+  .inst-sec{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 1, 1);
+  
+  }
+
+
 header h1{
   font-size: 7rem;
 }
